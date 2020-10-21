@@ -10,5 +10,5 @@
 
 for root in "/Passport"; do
 	find . -name "*.MP4" ! -path './Archive/*' ! -path './Assets/*'	 | read convert
-	HandBrakeCLI --preset-import-file '/home/monica/H265 Converstion.json' -i $convert -o ./output.mp4
+	HandBrakeCLI --preset-import-file '/home/monica/Conversion.json' -i $convert -o ./output.mp4
 done
